@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7917aaa1ba.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Invoice Creator</h1>
+                <p class="desc">Thanks for choosing GoodCorp, LLC!</p>
+            </header>
+            <section class="service-buttons">
+                <button id="wash-car-button" class="btn">Wash Car: $10</button>
+                <button id="mow-lawn-button" class="btn">Mow Lawn: $20</button>
+                <button id="pull-weeds-button" class="btn">Pull Weeds: $30</button>
+            </section>
+            <section class="invoice">
+                <div class="task-container">
+                        <h4 class="task">TASK</h4>
+                        <h4 class="total">TOTAL</h4>
+                </div>
+                <div class="services-container">
+                    <ul id="services">
+                    </ul>
+                </div>
+                <hr/>
+                <div class="notes-total">
+                    <h4 class="notes-h4">NOTES</h4>
+                    <h4 class="total-amount-h4">TOTAL AMOUNT</h4>
+                </div>
+                <div class="notes-total-price">
+                    <p class="note">We accept cash, credit card, or PayPal</p>
+                    <p class="total-price" id="total-cost"></p>
+                </div>
+                <div class="btn-align">
+                <button id="send-btn" class="send-button"><i class="icon fa-solid fa-envelope"></i>Send Invoice</button>             
+                </div>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
